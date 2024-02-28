@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fc67f6c06.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Ai Universe Hub</title>
+</head>
+<body>
+    <header>
+        <h2 class="text-3xl font-extrabold text-blue-800 text-center my-4">AI Universe Hub</h2>
+        <div class="text-center">
+            <button onclick="" class="btn btn-error text-white font-semibold">Sort by Date</button>
+        </div>
+
+        <div>
+            <div class="join flex  justify-center items-center my-4">
+                <input id="input-field" class="input input-bordered join-item rounded-xl bg-gray-200" placeholder="Search AI you want"/>
+                <button id="btn-search" onclick="searchAI()" class="btn join-item rounded-xl bg-red-600 outline-none border-none">Search</button>
+              </div>
+        </div>
+    </header>
+
+    <!-- card section starts -->
+    <main class="p-4">
+        <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- appending cards here -->
+        </div>
+
+        <div class="text-center">
+            <button id="btn-show" onclick="showMore()" class="btn btn-error text-white font-semibold">Show More</button>
+
+        </div>
+    </main>
+
+
+    <!-- card section ends -->
+
+    <script src="js/script.js">
+    </script>
+</body>
+</html>
