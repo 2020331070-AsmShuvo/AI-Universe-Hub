@@ -30,13 +30,12 @@ const displayAI = (AIs) =>{
             <hr>
             <h2 class="card-title text-gray-700">${item.name}</h2>
             <div class="card-actions justify-end">
-                <p class="text-sm text-gray-500">Date: 04/11/2023 </p>
+                <p class="text-sm text-gray-500">Date: ${item.published_in} </p>
 
                 <button class="btn text-gray-700 rounded-full"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
             </div>
-        `
-        ;
+        `;
         cardConatainer.appendChild(card);
 
         const ul = document.getElementById(`ul-${item.id}`);
